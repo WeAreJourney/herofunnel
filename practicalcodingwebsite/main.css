@@ -23,7 +23,6 @@ text {
 }
 
 .transparent-box {
-  background: rgba(255, 255, 255, 0.51);
   margin: auto !important;
 
   width: 25% !important;
