@@ -1,25 +1,28 @@
 /* our style */
+
 @font-face {
   font-family: "AngelicaProDisplay-Regular";
-  src: 
-  url("/fonts/AngelicaProDisplay-Regular.otf") format("opentype"),
-  }
+  src: url("/fonts/AngelicaProDisplay-Regular.otf") format("opentype"),
+}
 
-.anglecia{
+.anglecia {
   font-family: "AngelciaProDisplay-Regular";
 }
+
 /* Rectangle 3: */
 
 .main-logo {
   /* background: rgba(255, 255, 255, 0.51); */
   margin: auto;
-
   width: 40%;
   /* padding: 5%; */
 }
-text{
+
+text {
   font-family: "AngelciaProDisplay-Regular" !important;
 }
+
+
 /* original style */
 
 .px-0-force {
@@ -485,35 +488,32 @@ h1.text-giant.one-liner {
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .example {
     font-size: 26px !important;
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .example {
     font-size: 25px !important;
   }
 }
 
-
 .deadline {
   padding-bottom: 70px;
-  
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .applynow {
     width: 100%;
     display: block;
-
   }
 }
 
 .mv-button-blue {
   background-color: #FF7A01;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 
 /* #applynow {
@@ -521,34 +521,36 @@ h1.text-giant.one-liner {
 } */
 
 .receive {
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
-.modelbutton{
-  text-align: center; 
+.modelbutton {
+  text-align: center;
 }
 
-#mbutton{
+#mbutton {
   margin-bottom: 15px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .ambition {
     font-size: 16px !important;
   }
 }
 
-.learntocode{
+.learntocode {
   margin-top: 20px;
 }
 
-.div_button{
+.div_button {
   display: flex;
   justify-content: center;
 }
 
-.applynow_bottom{
+.applynow_bottom {
   text-align: center;
   display: flex;
   justify-content: center;
 }
+
+</style>
