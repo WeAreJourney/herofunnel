@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Note: Only needed for demo purposes. Delete for production sites.
+-->
+<html>
+	<head>
+		<title>Deposit for Hero Online MasterClass</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Deposit for Hero Online MasterClass</h1>
+							<p class="major">Learn how to come into a deep feeling of confidence and purpose within yourself and apply it to your everyday life</p>
+							<p>We ask for a $20 accountability deposit that is fully refundable immediately after the class.  </p>
+							<ul class="actions stacked">
+		<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. -->
+<button id="checkout-button">Pay</button>
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_live_DpaivZjAjjGyogjRBUVhpJX3', {
+    betas: ['checkout_beta_4']
+  });
+
+  var checkoutButton = document.getElementById('checkout-button');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_ELLoyG9hOc8t51', quantity: 1}],
+
+      // Note that it is not guaranteed your customers will be redirected to this
+      // URL *100%* of the time, it's possible that they could e.g. close the
+      // tab between form submission and the redirect.
+      successUrl: 'https://events.genndi.com/verified/h1ytqmjyg3yt4njqg36dgmrygm6d3llqmfAw386fmjAq/mrrtm4ddmrrw2mjyfvygc5l248sw253',
+      cancelUrl: 'https://events.genndi.com/register/818182175026328364/dc68cdcb18',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/main.jpg" alt="" />
+						</div>
+					</section>
+
+									<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/Hero-International-701660490234023/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="mailto:herointernational.team@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Hero International, LLC</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Note: Only needed for demo purposes. Delete for production sites. -->
+			<script src="assets/js/demo.js"></script>
+
+	</body>
+</html>
