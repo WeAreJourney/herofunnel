@@ -57,77 +57,176 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
 
     </head> 
 <body>
-	<section class="header bg-black bg-image bg-cover bg-center relative retina-bg" src="img/kp.jpg" srcset="img/kp.jpg" style="background-image: url('img/kp.jpg')">
-		<div class="header_group" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 1%, #000000 99%);">
-			
-			<hr class="mv_hr_white hidden md:block" >
-			<div class="hidden md:block bg-white md:bg-transparent container mx-auto mv_navblock">
-				<div class="md:flex justify-between pt-2">
-					<!-- <nav class="white px-4 md:px-0">
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/">Overview</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/about/">About</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/next-event/">Next Event</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/the-tribe/">The Tribe</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/the-buzz/">Buzz</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/press/">Press</a>
-						<a class="block p-2 md:p-0 text-black md:inline-block md:text-white item" href="/gallery/">Gallery</a>
-					</nav> -->
-					<nav class="white px-4 md:px-0">
-						<a class="md:inline-block block text-black md:inline-block md:text-white item md:bg-blue mt-1 rounded-lg p-2 md:p-0 md:py-1 md:px-3 -mt-1 text-sm py-1 inline-block" href="https://goo.gl/forms/hJm59zlbs1HhPXLl1">Apply</a>
-					</nav>
+	  <!-- Start � Header + Herobanner Desktop (Looping Vid) -->
+		<section class="video-bg-wrapper">
+
+			<video autoplay muted loop class="overview-video-bg" poster="img/main.jpg">
+				<!-- <source src="/assets/video-loop.mp4" type="video/mp4"> -->
+			</video>
+	
+			<div class="herobanner-overview-overlay">
+	
+				<div class="header_group text-left md:text-center fixed md:relative z-50 shadow-md md:shadow-none -mt-4 md:mt-0">
+					<div class="w-screen mx-auto bg-white md:bg-transparent md:pb-0">
+						<!-- <div class="flex justify-between items-center py-3 text-center border-bottom">
+							<div class="menuToggle block px-4 md:hidden w-1/3 text-left">
+								<img src="">
+							</div>
+							<div class="md:hidden w-1/3">
+								<img src="" class="inline-block mx-auto md:hidden" />
+							</div>
+							<div class="px-4 md:hidden w-1/3">
+								&nbsp;
+							</div>
+						 </div> --> 
+	
+	
+						 <!-- start of bootstrap navbar -->
+	<!-- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+		</div>
+	</nav> -->
+	
+						 <!-- end of bootstrap navbar -->
+	
+	<!-- NOTE: here is where to add the nav bar from MindValley -->
+	
+						 <!-- mindvalley's top bar, recommend making it so it smoothe scrolls to parts of the website eventually
+	
+						<div class="mx-auto items-center mv_navblock hidden md:block accordian md:px-0">
+							<nav class="white">
+								<a class="block text-black md:inline-block md:text-white item px-4 border-bottom md:py-0 py-2 mt-2 md:mt-0" href="">Start here</a>
+	
+								<div class="block text-black md:inline-block md:text-white dropdown-menu accordian-item md:py-0 py-2 px-4 border-bottom">
+									<a class="text-black md:text-white item trigger" href="#">Programs</a>
+								</div>
+	
+								<div class="block text-black md:inline-block md:text-white dropdown-menu accordian-item md:py-0 py-2 px-4 border-bottom">
+									<a class="text-black md:text-white item trigger" href="#">Events</a>
+									<div class="dropdown-items md:absolute relative transitions pt-2 m-0 target">
+										<div class="rounded bg-white text-left rounded md:py-4 px-4">
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/events">Event Calendar</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.afest.com/">Mindvalley A-Fest</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/u">Mindvalley U</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/reunion">Mindvalley Reunion</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/be">Meetups</a>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block text-black md:inline-block md:text-white dropdown-menu accordian-item md:py-0 py-2 px-4 border-bottom">
+									<a class="text-black md:text-white item trigger" href="#">About</a>
+									<div class="dropdown-items md:absolute relative transitions pt-2 m-0 target">
+										<div class="rounded bg-white text-left rounded md:py-4 px-4">
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/about">Our Mission</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/about/team">The Team</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.mindvalley.com/press">Press</a>
+											<a class="block text-black item py-2 text-normal" href="https://www.trustpilot.com/review/www.mindvalley.com">Reviews</a>
+											<a class="block text-black item py-2 text-normal" href="https://careers.mindvalley.com/">Careers</a>
+										</div>
+									</div>
+								</div>
+	
+								<div class="block text-black md:inline-block md:text-white dropdown-menu accordian-item md:py-0 py-2 px-4 border-bottom">
+									<a class="text-black md:text-white item trigger" href="#">Contact</a>
+								 
+								</div>
+	
+								<a class="rounded-lg border-white border border-solid pt-2 pb-4 md:pb-2 md:px-4 block text-black md:inline-block md:text-white item px-4"
+									href="https://home.mindvalley.com">Login</a>
+							</nav>
+						</div> -->
+	
+						<!-- NOTE: here is where to end the navbar -->
+	
+					</div>
+				</div>
+	
+				<div class="container mx-auto">
+					<div class="mt-4 w-3/5 mx-auto py-12 text-center">
+					<!-- <div class="transparent-box"> -->
+						<img class="main-logo" src="img/programmersilver.png"  alt="">
+					<!-- </div> -->
+					<!-- <h1 class="text-white font-gilroy-bold text-4xl lg:text-5xl mt-8">Hero</h1> -->
+						<h1 class="example text-white font-gilroy-bold text-4xl lg:text-5xl mt-8 anglecia" style="font-size:44px; margin-top: 0px"> Build apps with the best students around the world
+						</h1>
+						<br>
+						<br>
+						<h3 class="ambition text-white font-gilroy-medium text-xl mt-3"style="font-size:22px">For ambitious college students and recent graduates of all majors
+	
+						</h3>
+						<a href="course.html" class="mv-button-blue text-center mx-auto mt-8 lg:mb-10" target="blank">Start Here</a>
+					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="container mx-auto">
-			<div class="content h-96 md:h-128 flex items-center">
-				<div class="group_contents p-4 lg:p-0 -mt-4 w-2/3 w-full md:w-1/2">
-					<div class="h-48 block md:hidden"></div>
-					<h2 class="text-white font-gilroy-medium text-md text-lg md:text-2xl mt-3 leading-normal">You are applying to</h2>
-					<h1 class="text-white font-gilroy-bold text-white-4xl lg:text-5xl mt-3">The Hero Journey
-					<h2 class="text-white font-gilroy-medium text-md text-lg md:text-2xl mt-3 leading-normal">February 4-March 1 2019</h2>
-					<h2 class="text-white font-gilroy-medium text-md text-lg md:text-2xl mt-3 leading-normal">Deadline to apply: February 1st 11:59pm PST</h2>
-					<h3 class="text-white font-gilroy-medium text-md text-lg md:text-2xl mt-3 leading-normal deadline">
-
-				</div>
-			</div>
-		</div>
-	</section>
+	
+		</section>
   
-   <!-- Start � Section: The Hero Model -->
-   <section style="background: #F3F8FB;">
-    <div class="container mx-auto items-center py-12">
-      <h2 class="text-grey-dark font-gilroy-bold text-2xl md:text-4xl text-center md:py-4 py-10">Programmer empowers you to: </h2>
-      <div class="md:flex lg:my-6">
-        <div class="w-full md:w-1/3 text-center md:p-6 md:mb-0 mb-8">
-          <img src="img/hero_image.png">
-          <h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">holistically learn programming</h3>
-          <p class="mt-3 font-opensans font-light leading-normal text-grey-dark">
-            Work in small teams, learn to utilize strategies like code chunking, and gain insights on how to optimize your emotional state. Our approach to teaching efficient and mindful programming allows you to feel more motivated and less stressed.
-          </p>
-        </div>
-        <div class="w-full md:w-1/3 md:p-6 text-center md:mb-0 mb-8">
-          <img src="https://static.mindvalley.com/public/assets/2018/06/zRRy_ico-curriculum.svg">
-          <h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">build your own app portfolio</h3>
-          <p class="mt-3 font-opensans font-light leading-normal text-grey-dark"> Impress future employers, gain internship opportunities, and build off websites and apps you've already created. Traditional computer science courses don't teach you to build app portfolios and online programming classes are unmotivating without a strong community. Learn the fundamentals before spending over $8,000 on coding bootcamps. 
+   	<!-- Start � Section: The Hero Model -->
+		<section style="background: white;">
+				
+			<div class="container mx-auto items-center py-12" style="padding-bottom:0%">
+				
+				
+				<div class="md:flex lg:my-6">
+					<div class="w-full md:w-1/3 text-center md:p-6 md:mb-0 mb-8">
+						<img src="./img/main3.jpg">
+						<h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">Learn personal development in a way few teach</h3>
+						<p class="mt-3 font-opensans font-light leading-normal text-grey-dark">
+								The Hero Journey expands your horizons to see what your life can become. By teaching you to rewire your emotions to become your fullest, most confident self, and by exposing you to the world of travel (abroad or local), entrepreneurial impact (as an entrepreneur or employee), and more, you will discover your own purpose and learn how to contribute effectively to the world.
 
-        </p>
-        </div>
-        <div class="w-full md:w-1/3 md:p-6 text-center md:pb-0 pb-12">
-          <img src="https://static.mindvalley.com/public/assets/2018/06/sCrN_ico-teachers.svg">
-          <h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">join a constantly growing alumni network</h3>
-          <p class="mt-3 font-opensans font-light leading-normal text-grey-dark"> Work with top-tier students around the world, build out your own ideas, and get access to future coding opportunities as a freelancer. Our alumni network is a constantly-growing community of talented, motivated individuals who support each other and help each other succeed. Join the movement today!
-        </p>
-        </div>
-      </div>
-      <div class=modelbutton>
-        <a id="mbutton" href="course.html" target="blank" class="mv-button-blue text-center md:w-auto">Learn More</a>
+						</p>
+					</div>
+					<div class="w-full md:w-1/3 md:p-6 text-center md:mb-0 mb-8">
+						<img src="./img/rocks.png">
+						<h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">Create a tailored practice that fully integrates into your life
+								</h3>
+						<p class="mt-3 font-opensans font-light leading-normal text-grey-dark">What works best for you is completely unique. That’s why Hero focuses on providing the foundation to create your own practices. By applying principals of meditation to cooking, sports, being in nature, or anything else you love, you will create practices that you truly enjoy and integrate seamlessly into your life. This enjoyment is the key to your life actually being transformed.
 
-      </div>
-    </div>
-   
- 
-  <!-- End � Section: The Hero Model -->
+	
+					</p>
+					</div>
+					<div class="w-full md:w-1/3 md:p-6 text-center md:pb-0 pb-12">
+						<img src="./img/fistbump.jpg">
+						<h3 class="text-grey-dark font-gilroy-bold text-xl md:text-2xl mt-3">Join a Vibrant and Neverending
+								Community</h3>
+						<p class="mt-3 font-opensans font-light leading-normal text-grey-dark">Hero is a lifestyle. You don’t just join for the content, you join for the lifetime connection to people who believe they can live incredible lives and make a lasting impact. From dynamic group work in live coaching calls to video lessons that help you find the communities where your tribe exists, you will obtain an evergrowing lifeline to help you achieve your highest purpose. 
+
+					</p>
+					</div>
+				
+			</div>
+		 
+		</section>
+	
+		<!-- End � Section: The Hero Model -->
   <section style="background:#F9F9F9" class="mt-10  md:py-10  p-4">
       <div class="container mx-auto">
         <div class="pt-4">
@@ -444,9 +543,8 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
     </div>
   </section>
 
-  <!-- what people are saying -->
+   <!-- what people are saying -->
 
-  
 <section class="bg-white">
 	<div class="container mx-auto py-12">
 		<h2 class="font-gilroy-bold text-4xl text-center pt-8">What Students are Saying</h2>
@@ -456,13 +554,14 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
 			<div class="w-full md:w-1/2 md:w-1/3 flex mansory flex-wrap flex-col items-start">
         <div class="w-full p-2 md:p-4">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/sara.jpg" srcset="img/sara.jpg" style="background-image: url('img/2day.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/jase.jpg" srcset="img/jase.jpg" style="background-image: url('img/2day.jpg');">
 						</div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"it made coding way less scary" </h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"The Programmer team made coding way less scary than it’s been in the past. After a couple of weeks, I already had a beautiful website. Plus their mission of promoting meditation and mindfulness can be applied to so many situations. Thanks Programmer team!"</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Sara Duncan </div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Rutgers University 
+							<h1 class="font-gilroy-bold text-2xl">"I am now way more able to focus" </h1>
+							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"Hero’s lesson on entering flow states while working was incredible. I am now way more able to focus and also have much more awareness around my emotions when I am working. I never would have thought meditation could be applied to work in such a productive way but it’s really amazing the impact it can have."
+								</p>
+							<div class="font-gilroy-bold mb-2 mt-4">Jase Broderick </div>
+							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Data Scientist, Microsoft 
 
             </div>
             
@@ -477,15 +576,16 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
 -->
 				<div class="w-full p-2 md:p-4">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/daniel_2.jpg" srcset="img/daniel_2.jpg" style="background-image: url('https://static.mindvalley.com/public/assets/2018/08/ThNF_testi-tom_s360.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/sara.jpg" srcset="img/sara.jpg" style="background-image: url('');">
             
             </div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"a unique and unparalleled experience"</h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"From start to finish, Programmer has been a unique and unparallel experience. Not only do I get accescs to great group of developers every step of the way, I also formed a community of coders that were willing to learn right by my side. This program can be the beginning of your journey to change your mindset and career."</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Daniel Gonzalez</div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Lafayette College</p>
-						</div>
+								<h1 class="font-gilroy-bold text-2xl">"Mindfulness can be applied to so many situations"</h1>
+								<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"Hero’s mission of promoting meditation and mindfulness can be applied to so many situations. Thanks Hero team!"
+									</p>
+								<div class="font-gilroy-bold mb-2 mt-4">Sara Duncan</div>
+								<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">PhD in Public Health, Rutgers University</p>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -493,26 +593,30 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
 
 				<div class="w-full p-2 md:p-4">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/marianne.jpg" srcset="img/marianne.jpg" style="background-image: url('https://static.mindvalley.com/public/assets/2018/08/7yqu_testi-anousheh_s360.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/kristian.jpg" srcset="img/kristian.jpg" style="background-image: url('');">
 						</div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"I was able to gain confidence that I could create basic programming projects"</h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"In just a few short weeks, I was able to gain confidence that I could create basic programming projects that I had been terrified to start before. Programmer was able to provide the framework to help me get started!"</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Marianne Cruzat</div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">University of North Carolina</p>
-						</div>
+								<h1 class="font-gilroy-bold text-2xl">"My life is really shifting into alignment"</h1>
+								<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"That was a really powerful experience. I’ve been sitting in hero meditation every morning when I wake up and I’ve been watching my emotions drastically change. My life is really shifting into alignment!
+										
+										"</p>
+								<div class="font-gilroy-bold mb-2 mt-4">Kristian Mccanell </div>
+								<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Conscious Hip-Hop Artist</p>
+							</div>
+					
 					</div>
 				</div>
 
 				<div class="w-full p-2 md:p-4  hidden md:block">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/noah.jpg" srcset="img/noah.jpg" style="background-image: url('https://static.mindvalley.com/public/assets/2018/08/Vh2U_testi-khailee_s360.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/caitlin.jpg" srcset="img/caitlin.jpg" style="background-image: url('');">
 						</div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"enjoyable and enriching"</h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"My experience with Programmer was enjoyable and enriching. The coding aspect of the curriculum was easy to understand for a beginner, but also very fulfilling in the abilities it provided. Overall, the experience was valuable in the skills that it has provided me for life and I will never regret my participation."</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Noah Sasaki</div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Pomona College</p>
+							<h1 class="font-gilroy-bold text-2xl">"How to not just meditate but drop deeply into meditation"</h1>
+							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"I could feel the love moving all around my body! I’ve never done meditation that was outside of headspace but doing the visualizations and understanding how to not just meditate but drop deeply into meditation was an incredible experience
+									."</p>
+							<div class="font-gilroy-bold mb-2 mt-4">Caitlin May</div>
+							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">___</p>
 						</div>
 					</div>
 				</div>
@@ -522,26 +626,27 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
 
 				<div class="w-full p-2 md:p-4  hidden md:block">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/asfandyar_2.jpg" srcset="img/asfandyar_2.jpg" style="background-image: url('https://static.mindvalley.com/public/assets/2018/07/65eU_buzz-testimn-txt-1_2x.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/daniel_2.jpg" srcset="img/daniel_2.jpg" style="background-image: url('');">
 						</div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"very clear and straightforward"</h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"Programmer has a very unique and different approach to coding! It may not be for everybody, but it definitely should be. I can't wait to see what they come up with as they you grow. What I enjoyed most of all, however, was the coding bit by bit--very clear and straightforward. The content was great and so were the tutorials overall. "</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Asfandyar Azhar</div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Brown University</p>
+							<h1 class="font-gilroy-bold text-2xl">"a unique and unparalleled experience"</h1>
+							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"From start to finish, Hero has been a unique and unparallel experience. Not only do I get access to great group of people every step of the way, I also formed a community of people that were willing to learn right by my side. This program can be the beginning of your journey to change your mindset and career."</p>
+							<div class="font-gilroy-bold mb-2 mt-4">Daniel Gonzalez</div>
+							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Student, Lafayette College</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="w-full p-2 md:p-4  hidden md:block">
 					<div class="rounded-md shadow-lg">
-						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/luke.jpg" srcset="img/luke.jpg" style="background-image: url('https://static.mindvalley.com/public/assets/2018/07/dJyf_buzz-testimn-txt-5_2x.jpg');">
+						<div class="bg-cover w-full h-56 bg-center bg-no-repeat rounded-t retina-bg" src="img/patrick.jpg" srcset="img/patrick.jpg" style="background-image: url('');">
 						</div>
 						<div class="contents p-6">
-							<h1 class="font-gilroy-bold text-2xl">"I've met the most awesome people."</h1>
-							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"I was pretty impressed overall with the curriculum, and the students they recruited were top-notch. Some of the students helped me so much when I was stuck while we were working in the group sessions."</p>
-							<div class="font-gilroy-bold mb-2 mt-4">Luke Hostetter</div>
-							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Santa Clara University</p>
+							<h1 class="font-gilroy-bold text-2xl">"It taught me a much deeper understanding of how to relate to people."</h1>
+							<p class="font-gilroy-regular leading-normal mt-3 text-grey-dark">"The Hero Conversations lesson in particular was really helpful. It taught me a much deeper understanding of how to relate to people and learn how to help them, both at work and in my personal life.
+									"</p>
+							<div class="font-gilroy-bold mb-2 mt-4">Patrick Shao</div>
+							<p class="block font-gilroy-medium text-xs md:text-sm leading-normal">Software Developer, Microsoft</p>
 
             </div>
             
@@ -550,55 +655,57 @@ mixpanel.init("f190e0a3abb2f2ba2e9346cc30983571");</script>
         
 
       </div>
-      <a href="https://goo.gl/forms/hJm59zlbs1HhPXLl1" class="mv-button-blue text-center mx-auto mt-8 lg:mb-10" target="blank">Request Application</a>
+      <!-- <a href="https://goo.gl/forms/hJm59zlbs1HhPXLl1" class="mv-button-blue text-center mx-auto mt-8 lg:mb-10" target="blank">Request Application</a> -->
 
 		</div> 
 
 	</div>
 </section>
-<!-- Section with centered text -->
+
+	<!-- Section with centered text -->
 	<section>
 		<div class="container mx-auto py-12 px-4 md:px-0" style="padding-top:0%">
 			<div class="w-full md:w-1/2 mx-auto text-left">
-				<h1 class="receive font-gilroy-bold text-2xl md:text-3xl mt-2">A Better Programming Experience </h1>
-				<span><b>at a fraction of the cost from similarly-valued online bootcamps</b> </span>
+				<!-- <h1 class="receive font-gilroy-bold text-2xl md:text-3xl mt-2">A Better Programming Experience </h1>
+				<span><b>at a fraction of the cost from similarly-valued online bootcamps</b> </span> -->
 
 
 				<div class="mx-auto rounded mt-10 text-left">
 					<h3 class="mt-1 mb-6 font-gilroy-medium "></h3>
 					<ul class="m-0 p-0 font-gilroy-regular">
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Web development + app building curriculum - <strong>build your own personal websites</strong> and chat application 	
-            </li>
-            <li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Personal evolution curriculum - master advanced meditation techniques that <strong>optimize your performance</strong>
+
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)"> 4-weeks of video lessons, just 30 minutes a day - <strong>learn as efficiently as possible</strong> without any sales fluff
 						</li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Radical impact curriculum - learn how to <strong>save countless hours coding</strong>, ask for help, sell products before building, and create productive teams
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Weekly coaching calls - ask qustions, <strong>receive personal feedback</strong>, and learn from the experiences of your peers
 						</li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Programmer Life curriculum -<strong>learn to love programming</strong> by creating a better laptop setup, focus playlists, and a relaxed enviornment
-            </li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Weekly 1-2 hour online team sessions with a TA - <strong>work in 2-3 person teams</strong> and answer all your questions
-            </li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Bug assistance within 24 hours on private Slack group - maximize conceptual understanding, <strong>minimize time spent on less important details</strong>
-            </li>	
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Access to growing alumni network - <strong>network with top-tier students</strong> around the world 
-            </li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Opportunities for <strong>future development projects</strong> - continue to master your skills with paid and unpaid coding projects 
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Comprehensive wisdom-based curriculum - <strong>avoid burnout</strong> and <strong>stay in consistent states of flow</strong> (even after you get distracted)
 						</li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Automatically considered for fellowship program - show us all of who you are and have the <strong>chance to learn for free</strong> 
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Comprehensive impact-based curriculum - <strong>apply learnings effectively</strong> and directly <strong>to your everyday life</strong>
 						</li>
-						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)"><strong>Finish at any time</strong> - if you get busy with school, join the next cohort, pick up where you left off, and have lifetime access to our material
-            </li>
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Dedication meditations - <strong>ensure you stay commited</strong> to your intentions of practice during and beyond the Journey
+
+						</li>
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)">Dynamic + guided exercises - meditations, breathwork, and more to <strong>rewire your emotional state</strong> 
+							
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)"><strong>Lifetime access to course and coaching calls-</strong> <strong></strong>repeat the course an infinite number of times for free. With bonus content added every month, your journey lasts a lifetime
+						</li>	
+						<li class="mb-4 pl-6 list-reset text-sm bg-no-repeat" style="font-size: 16px; background-position:2px;background-image: url(https://static.mindvalley.com/public/assets/2018/07/y4z2_checkmark_green.svg)"><strong>BONUS</strong> - Apply to receive a full or partial scholarship to the Hero Journey
+						</li>
+				
+
 
 					</ul>
 					<div class="flex border-t pt-4">
 						<div class="w-1/2 font-gilroy-bold">Price</div>
-						<div class="w-1/2 text-right font-gilroy-bold  sb_fields-package-price">$349</div>
+						<div class="w-1/2 text-right font-gilroy-bold  sb_fields-package-price">$499</div>
 					</div>
 				</div>
-					<div class="inline-block"><a href="https://goo.gl/forms/hJm59zlbs1HhPXLl1" class="mv-button-blue  sb_fields-package-apply_link">Request Application</a> </div>
-					<br> <h5 class="mt-1 mb-6 font-gilroy-medium ">(space limited to 30 students)</h5>
+					<!-- <div class="inline-block"><a href="https://goo.gl/forms/hJm59zlbs1HhPXLl1" class="mv-button-blue  sb_fields-package-apply_link">Request Application</a> </div> -->
+					<br> <h5 class="mt-1 mb-6 font-gilroy-medium ">(space limited to 20 students)</h5>
 				</div>
 		</div>
 	</section>
+
 
 <!-- Start � Section: CTA -->
 <section class="bg-image bg-cover bg-center relative retina-bg" srcset="img/sunsetpalm.jpg"
