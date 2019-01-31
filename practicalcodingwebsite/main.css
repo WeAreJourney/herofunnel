@@ -127,7 +127,7 @@ text {
 .video-bg-wrapper {
   position: relative;
   overflow: hidden;
-  background: url("img/background.jpg") no-repeat center;
+  /* background: url("img/kp.jpg") no-repeat center; */
   background-size: cover
 }
 
@@ -140,7 +140,7 @@ text {
 .herobanner-overview-overlay {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, .1);
   color: #f1f1f1;
   width: 100%;
   height: 100%
